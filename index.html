@@ -9,15 +9,82 @@
 
 	<h1>Apply Today</h1>
 
-	<legend><span>1</span>Your Basic Information</legend>
+	<fieldset>
+	<legend>Your Basic Information</legend>
 
-	<label for="name">Name:</label>
-	<input type="text" id="name" name="applicant_name" placeholder="Michael">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="applicant_name" placeholder="Michael">
 
-	<label for="middle_initial">Middle Initial:</label>
-	<input type="text" id="middle_initial" name="applicant_mid_init" placeholder="G">
+		<label for="middle_initial">Middle Initial:</label>
+		<input type="text" id="middle_initial" name="applicant_mid_init" placeholder="G">
 
-	<label for="last_name">Last Name:</label>
+		<label for="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="applicant_last_name" placeholder="Tyson">
+	</fieldset>
+
+	<fieldset>
+	<legend>Your Contact Information</legend>
+
+		<label for="address">Home Address:</label>
+		<input type="text" id="address" name="applicant_address">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="applicant_email" placeholder="youthilly@email.com">
+
+		<label for="telephone">Email:</label>
+		<input type="tel" id="telephone" name="applicant_telephone" placeholder="(000)000-0000">
+
+		<label for="linkedin">LinkedIn:</label>
+		<input type="link" id="telephone" name="applicant_linkedin">
+	</fieldset>
+
+	<fieldset>
+	<legend>Employer Information</legend>
+
+		<label for="employer">Company/Organization:</label>
+		<input type="text" id="employer" name=employer placeholder="Yo Momma">
+
+		<label for="emp_address">Employer Address:</label>
+		<input type="text" id="emp_address" name="emp_address">
+	</fieldset>
+
+	<fieldset>
+	<legend>Loan Information</legend>
+
+		<label for="loan_type">Type of Loan Requested:</label>
+		<select id="loan_type" name="loan_type">
+			<option value="commercial">Commercial</option>
+			<option value="real_estate">Real Estate</option>
+			<option value="personal">Personal</option>
+			<option value="mortgage">Mortgage</option>
+		</select>
+
+		<label for="amt_requested">Requested Loan Amount:</label>
+		<input type="number" min="1" step="any" placeholder="1,000,000.00"><br>
+
+		<label>Term Length Requested:</label><br>
+			<input type="radio" id="term_5_yrs" value="term_5_yrs" name="term_length"><label for="term_5_yrs">5 Years</label>
+			<input type="radio" id="term_15_yrs" value="term_15_yrs" name="term_length"><label for="term_15_yrs">15 Years</label>
+			<input type="radio" id="term_30_yrs" value="term_30_yrs" name="term_length"><label for="term_30_yrs">30 Years</label><br>
+
+		<label for="special_conditions">Select all that apply:</label><br>
+			<input type="checkbox" id="special_conditions" value="out_of_state" name="user_down_payment"><label for="special_conditions">I have a down payment</label>
+			<input type="checkbox" id="special_conditions" value="down_payment" name="user_out_of_state"><label for="special_conditions">Out-of-State Resident</label>
+			<input type="checkbox" id="special_conditions" value="married" name="user_married"><label for="special_conditions">Married</label>
+			<input type="checkbox" id="special_conditions" value="co_signer" name="user_co_signer"><label for="special_conditions">Loan will be co-signed</label>
+		</fieldset>
+
+		<fieldset>
+		<legend>Additional Information</legend>
+
+			<label>Anything else we should know?</label><br>
+			<textarea id="additional_information" name="additional_information"></textarea>
+		</fieldset>
+
+
+
+
+
 
 
 </body>
