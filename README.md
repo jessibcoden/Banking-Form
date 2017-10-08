@@ -33,12 +33,18 @@
 1. Applicant telephone number
 1. Applicant LinkedIn URL
 
-### How to run:
-
->
+### How to run (Node must be installed on your machine):
+```
 git clone https://github.com/lady-ace/Banking-Form
-> 
 cd Banking-Form
->
-http-server -p 8080µ
->
+npm install http-server -g
+http-server -p 8080
+```
+
+This will show in your browser at:
+`http://localhost:8080`
+
+### Contributors:
+[Jessica Brawner](https://github.com/lady-ace)
+
+
